@@ -1,0 +1,89 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f7f7f7!important;
+}
+.title{
+    margin-top: 0px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.title h2{
+    text-align: center;
+    gap: 24px;
+    margin-bottom: 8px;
+    margin-top: 16px;
+}
+
+.form-body{
+    box-sizing: border-box;
+    margin: 0;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+
+}
+
+.form-area{
+    width: 100%;
+}
+
+.main-area{
+    position: relative;
+    overflow: hidden;
+    background: #FFFFFF;
+    border-radius: 8px;
+    min-width: 35vw;
+    width: 792px;
+    padding: 20px 50px;
+    z-index: 10;
+    border: 1px solid #DFE1E6;
+    box-shadow: 0px 0px 2px rgba(23, 43, 77, 0.1), 0px 1px 2px rgba(23, 43, 77, 0.04);
+}
+
+.main-form{
+    position: relative;
+    padding: 20px;
+}
+
+.form-caption{
+    margin-top: -15px;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.form-caption h4{
+    text-align: center;
+    gap: 24px;
+    margin-bottom: 8px;
+    margin-top: 16px;
+    font-weight: bold;
+}
+
+.fieldWrapper{
+    text-align: center;
+}
+
+.result-area{
+    text-align: center;
+}
+
+.result-area h4{
+    color: #28a745!important;
+    font-weight: bold;
+}
+
+.progress {
+    height: 20px;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  
+  .progress-bar {
+    height: 100%;
+    background-color: #007bff;
+  }

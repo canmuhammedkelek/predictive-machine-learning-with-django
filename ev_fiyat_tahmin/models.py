@@ -1,0 +1,20 @@
+from django.db import models
+
+class Ev(models.Model):
+    net_alan = models.IntegerField()
+    brut_alan = models.IntegerField()
+    kredi_durumu = models.IntegerField()
+    kat_sayisi = models.IntegerField()
+    isitma = models.IntegerField()
+    bulundugu_kat = models.IntegerField()
+    bina_yasi = models.IntegerField()
+    esya = models.IntegerField()
+    kullanim_durumu = models.IntegerField()
+    fiyat = models.IntegerField()
+    il = models.IntegerField()
+    ilce = models.IntegerField()
+    mahalle = models.IntegerField()
+    oda_sayisi = models.IntegerField()
+    toplam_oda_sayisi = models.IntegerField()
+    lat = models.IntegerField()
+    lng = models.IntegerField()

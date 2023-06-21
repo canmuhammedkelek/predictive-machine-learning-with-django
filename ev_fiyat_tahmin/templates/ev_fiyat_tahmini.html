@@ -1,0 +1,56 @@
+{% load static %}
+{% load bootstrap4 %}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ev Fiyat Tahmini</title>
+    <link rel="stylesheet" type="text/css" href="{% static '/css/style.css' %}">
+    {% bootstrap_css %}
+</head>
+<body>
+    <div>
+        <div class="title">
+            <h2>Evinizin Değerini Hesaplayın</h2>
+            Sahip olduğunuz evin diğer evlere kıyasla fiyatını tahmin eden makina öğrenmesi modeli
+        </div>
+       <div class="form-body">
+            <div class="form-area">
+                <div>
+                    <div class="main-area">
+                        <form method="post" class="main-form">
+                            <div class="form-caption">
+                                <h4>{{ progress.step_title }}</h2>
+                            </div>
+                            {% csrf_token %}
+                            {{ wizard.management_form }}
+                        
+                            {% for field in active_form %}
+                            <div class="form-group">
+                                {{ field.label_tag }} {{ field }}
+                            </div>
+                            {% endfor %}
+                        
+                            <div>
+                            {% if wizard.steps.prev %}
+                                <button type="submit" class="btn btn-warning" name="wizard_goto_step" value="{{ wizard.steps.prev }}">Geri</button>
+                            {% endif %}
+                            {% if wizard.steps.current < wizard.steps.count %}
+                                <button type="submit" name="wizard_goto_step" value="{{ wizard.steps.current }}">İleri</button>
+                            {% else %}
+                                <button type="submit" class="btn btn-primary" name="submit">İleri</button>
+                            {% endif %}
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+       </div>
+        
+    </div>
+    
+    {% bootstrap_javascript %}
+
+</body>
+</html>
