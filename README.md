@@ -5,8 +5,8 @@
 Virtual Environment Kurulumu
 
 ```sh
-$ virtualenv2 --no-site-packages env
-$ source env/bin/activate
+$ python -m venv myvenv
+$ source myvenv/bin/activate
 ```
 
 Kütüphanelerin Kurulumu
@@ -18,14 +18,14 @@ $ pip install -r requirements.txt
 ## Çalıştırma
 
 ```sh
-(env)$ cd fiyatTahmin
-(env)$ python manage.py runserver
+$ cd fiyatTahmin
+$ python manage.py runserver
 ```
 
 ## Makina Öğrenmesini Konsol Ortamında Çalıştırma
 
 ```sh
-(env)$ cd fiyatTahmin
-(env)$ cd ev_fiyat_tahmin
-(env)$ python test_veri_okuma.py
+$ cd fiyatTahmin
+$ cd ev_fiyat_tahmin
+$ python test_veri_okuma.py
 ```
