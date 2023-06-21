@@ -153,7 +153,7 @@ class EvFiyatTahminiWizard(SessionWizardView):
         tahmin_degeri_tl = locale.currency(tahmin_degeri[0], grouping=True, symbol=False)
         tahmin_degeri_tl = "₺" + tahmin_degeri_tl
 
-        print("canmuyhammedkelek", tahmin_degeri)
+        print("canmuhammedkelek", tahmin_degeri)
         # Tahmin sonucunu template'e aktar
         context = {
             'tahmin_degeri': tahmin_degeri_tl,

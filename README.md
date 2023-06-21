@@ -18,7 +18,6 @@ $ pip install -r requirements.txt
 ## Çalıştırma
 
 ```sh
-$ cd fiyatTahmin
 $ python manage.py runserver
 ```
 
