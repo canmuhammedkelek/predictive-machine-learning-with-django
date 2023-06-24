@@ -1,5 +1,7 @@
 # Makina Öğrenmesi ile Ev Fiyat Tahmini Uygulaması
 
+Evinizin fiyatını diğer evlere kıyasla tahmin eden makine öğrenimi modeli
+
 ## Kurulum
 
 Virtual Environment Kurulumu
