@@ -28,3 +28,8 @@ $ cd fiyatTahmin
 $ cd ev_fiyat_tahmin
 $ python test_veri_okuma.py
 ```
+## Windows Anaconda Kullanımı Notları
+
+```sh
+scikit-learn Python sürüm 3.11.0; yalnızca >=3.7,<3.11 sürümlerinde desteklenir.
+```
